@@ -35,8 +35,8 @@
 
         <div class="card mt-2">
             <div class="card-body">
-                <table class="table">
-                    <thead>
+                <table class="table table-bordered">
+                    <thead class="bg-light">
                         <tr>
                             <th>NIM</th>
                             <th>NAMA</th>
@@ -54,7 +54,10 @@
                                     <td>$row[nama]</td>
                                     <td>$row[jurusan]</td>
                                     <td>$row[alamat]</td>
-                                    <td></td>
+                                    <td>
+                                        <a href='index.php?page=mahasiswa_edit&nim=$row[nim]' class='btn btn-warning btn-sm'>Edit</a>
+                                        <a href='index.php?page=mahasiswa_delete&nim=$row[nim]' onclick=\"return confirm('Hapus Data?')\" class='btn btn-danger btn-sm'>Delete</a>
+                                    </td>
                                 </tr>";
                         }
                         ?>
