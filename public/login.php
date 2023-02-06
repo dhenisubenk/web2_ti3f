@@ -26,13 +26,13 @@ require_once 'config/koneksi.php';
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Login Form</h5>
-                        <form action="">
+                        <form action="ceklogin.php" method="POST">
                             <div class="mb-2 form-floating">
-                                <input type="text" class="form-control" name="username" id="username" placeholder="Masukan Username" required>
+                                <input type="text" class="form-control" name="username" id="username" placeholder="Masukan Username" autocomplete="off" required>
                                 <label for="username" class="form-label">Username</label>
                             </div>
                             <div class="mb-2 form-floating">
-                                <input type="text" class="form-control" name="password" id="password" placeholder="Masukan Password" required>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Masukan Password" required>
                                 <label for="password" class="form-label">Password</label>
                             </div>
                             <div class="mb-2 d-grid">
